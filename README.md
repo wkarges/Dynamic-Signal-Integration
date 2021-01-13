@@ -1,13 +1,12 @@
 # Dynamic Signal Integration
 
-## Description
 Integration to Dynamic Signal for Four Winds Interactive resources.  This documentation is unlikely to be helpful if you are not an FWI employee.
 
 ## Getting Started
 
 You'll need to identify the person on the client side who is a "Global Manager" within the Dynamic Signal platform.  That person will need to obtain and provide the Base URL and Bearer Token(s) necessary to make the API calls.
 
-### Obtaining the `Bearer Token` and `Base URL`
+### Obtaining the Bearer Token and Base URL
 
 These instructions are for the Dynamic Signal Global Manager.  Please feel free to forward them to that person or persons.
 
@@ -23,7 +22,7 @@ Once you have the Bearer Token and BaseURL the setup is pretty easy.  You can st
 
 First you'll need to create a new web adapter in IF.  At the connection enter in the Base URL provided by the client.
 
-Save then right-click on the connection and select extended properties.  Enter `Bearer`|`<yourBearerToken` in the first and second Column.
+Save then right-click on the connection and select extended properties.  Enter `Bearer`|`<yourBearerToken` in the first and second column.
 
 ![bearer-token.png](images/bearer-token.png)
 
