@@ -27,7 +27,7 @@ Save then right-click on the connection and select extended properties.  Enter `
 
 ![bearer-token.png](images/bearer-token.png)
 
-#### GET Categories
+### GET Categories
 
 You'll first be using the [GET Categories](https://dev.dynamicsignal.com/api/Categories#get-categories) request so append `/v1/categories` to the end of your Base URL.  It should look like `https://<yourBaseURL>/v1/categories`.
 
@@ -35,7 +35,7 @@ You'll first be using the [GET Categories](https://dev.dynamicsignal.com/api/Cat
 
 Submit your request and you should get a list of categories in the response.  You'll need to identify the Category/Categories that the client wants to view posts from.  The first field of each Category node should contain the numeric category ID that you'll need for the next request.
 
-#### GET Posts
+### GET Posts
 
 Once you've obtained your category ID(s) you'll need to duplicate your connection (copy it for as many different categories the client needs to pull posts from).
 
