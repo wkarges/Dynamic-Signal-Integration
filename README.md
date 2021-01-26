@@ -32,14 +32,17 @@ You'll first be using the [GET Categories](https://dev.dynamicsignal.com/api/Cat
 
 ![get-categories.png](images/get-categories.png)
 
-Submit your request and you should get a list of categories in the response.  You'll need to identify the Category/Categories that the client wants to view posts from.  The first field of each Category node should contain the numeric category ID that you'll need for the next request.
+Make sure you change the response format to `text` or `json` then submit your request and you should get a list of categories in the response.  You'll need to identify the Category/Categories that the client wants to view posts from.  The first field of each Category node should contain the numeric category ID that you'll need for the next request.
 
 ### GET Posts
 
 Once you've obtained your category ID(s) you'll need to duplicate your connection (copy it for as many different categories the client needs to pull posts from).
 
-In your new connection, update the connection URL with the GET Post Categories request.  You'll need to add the id parameter with your category ID at the end of each connection URL.  Your URL should look something like this: `https://yourBaseURL/v1/posts/categories?id=yourIDnumber`
+In your new connection, update the connection URL with the [GET Posts by Category](https://dev.dynamicsignal.com/api/Categories#get-posts-categories) request.  You'll need to add the id parameter with your category ID at the end of each connection URL.  Your URL should look something like this: `https://yourBaseURL/v1/posts/categories?id=yourIDnumber`
 
 ![get-posts.png](images/get-posts.png)
 
+### Final Steps
+
+Submit your GET Posts request and you should get a large JSON response.  I've gone ahead and created a stylesheet to clean up this response so you'll need to add the `Convert to XML` and the `Run Transform` actions to your GET Posts web adapter.  Within the `Run Transform` action, you'll need to path to [this stylesheet](assets/DynamicSignalStylesheet.xsl).
 
