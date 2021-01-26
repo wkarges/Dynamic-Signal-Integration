@@ -46,3 +46,4 @@ In your new connection, update the connection URL with the [GET Posts by Categor
 
 Submit your GET Posts request and you should get a large JSON response.  I've gone ahead and created a stylesheet to clean up this response so you'll need to add the `Convert to XML` and the `Run Transform` actions to your GET Posts web adapter.  Within the `Run Transform` action, you'll need to path to [this stylesheet](assets/DynamicSignalStylesheet.xsl).
 
+Submit your request again (you may need to clear the IF cache) and you should have a (mostly) flattened XML response with all the information you need.
